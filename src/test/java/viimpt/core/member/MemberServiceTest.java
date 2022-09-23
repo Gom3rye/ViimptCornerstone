@@ -9,7 +9,8 @@ public class MemberServiceTest {
     MemberService memberService = new MemberServiceImpl();
 
     @Test
-    void joing(){
+    void join(){ //단위 테스트는 정말 빨리 되기 때문에 잘 만드는 것이 중요하다.
+        //(여기서 단위 테스트란 스프링이나 컨테이너 도움 없이 순수 자바 코드로만 테스트 하는 것)
         //given
         Member member = new Member(1L, "memberA", Grade.VIP);
 
